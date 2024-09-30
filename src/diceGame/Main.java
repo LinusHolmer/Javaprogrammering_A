@@ -24,7 +24,7 @@ public class Main {
 
         if (newPlayer.getPlayerSum() > newOpponent.getOpponentSum()) {
             System.out.println(newPlayer.getName()+" win");
-        } else if (newPlayer.getPlayerSum() < newPlayer.getOpponentSum()) {
+        } else if (newPlayer.getPlayerSum() < newOpponent.getOpponentSum()) {
             System.out.println(newOpponent.getName()+" win");
         } else {
             System.out.println("Draw");
