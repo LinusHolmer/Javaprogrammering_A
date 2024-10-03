@@ -17,13 +17,13 @@ public class Main {
 
         System.out.println("Press any button to roll dice, "+newPlayer.getName());
         scan.nextLine();
-        newPlayer.playerCalculate();
-        newPlayer.playerCalculate();
+        newPlayer.playerRoll();
+        newPlayer.playerRoll();
 
         System.out.println("Press any button to roll dice, "+newOpponent.getName());
         scan.nextLine();
-        newOpponent.opponentCalculate();
-        newOpponent.opponentCalculate();
+        newOpponent.opponentRoll();
+        newOpponent.opponentRoll();
 
         if (newPlayer.getPlayerSum() > newOpponent.getOpponentSum()) {
             System.out.println(newPlayer.getName()+" wins!");

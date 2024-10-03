@@ -41,14 +41,14 @@ public class Player {
     }
 
     // Methods
-    public void playerCalculate(){
+    public void playerRoll(){
         Random random = new Random();
         int playerRoll1 = random.nextInt(6) + 1;
         System.out.println(Main.getPlayerName() +" got a "+playerRoll1);
         setPlayerSum((playerRoll1 + playerSum));
 
     }
-    public void opponentCalculate(){
+    public void opponentRoll(){
         Random random = new Random();
         int opponentRoll1 = random.nextInt(6) + 1;
         System.out.println(Main.getOpponentName() +" got a "+opponentRoll1);
