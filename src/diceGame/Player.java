@@ -7,6 +7,7 @@ public class Player {
     private int playerSum;
     private int opponentSum;
 
+    // Constructs
     public Player(String name, int playerSum, int opponentSum){
         this.name = name;
         this.playerSum = playerSum;
@@ -39,6 +40,7 @@ public class Player {
         this.opponentSum = opponentSum;
     }
 
+    // Methods
     public void playerCalculate(){
         Random random = new Random();
         int playerNum1 = random.nextInt(6) + 1;
@@ -49,7 +51,7 @@ public class Player {
     public void opponentCalculate(){
         Random random = new Random();
         int opponentNum1 = random.nextInt(6) + 1;
-        System.out.println("Your opponent got a "+opponentNum1);
+        System.out.println("Opponent got a "+opponentNum1);
         setOpponentSum((opponentNum1 + opponentSum));
     }
 

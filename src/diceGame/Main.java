@@ -12,20 +12,20 @@ public class Main {
         Player newPlayer = new Player(playerName, 0, 0);
         Player newOpponent = new Player(opponentName, 0, 0);
 
-        System.out.println("Press any button to roll dice "+newPlayer.getName());
+        System.out.println("Press any button to roll dice, "+newPlayer.getName());
         scan.nextLine();
         newPlayer.playerCalculate();
         newPlayer.playerCalculate();
 
-        System.out.println("Press any button to roll dice "+newOpponent.getName());
+        System.out.println("Press any button to roll dice, "+newOpponent.getName());
         scan.nextLine();
         newOpponent.opponentCalculate();
         newOpponent.opponentCalculate();
 
         if (newPlayer.getPlayerSum() > newOpponent.getOpponentSum()) {
-            System.out.println(newPlayer.getName()+" win");
+            System.out.println(newPlayer.getName()+" wins!");
         } else if (newPlayer.getPlayerSum() < newOpponent.getOpponentSum()) {
-            System.out.println(newOpponent.getName()+" win");
+            System.out.println(newOpponent.getName()+" wins!");
         } else {
             System.out.println("Draw");
         }
