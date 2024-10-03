@@ -43,16 +43,16 @@ public class Player {
     // Methods
     public void playerCalculate(){
         Random random = new Random();
-        int playerNum1 = random.nextInt(6) + 1;
-        System.out.println("Player got a "+playerNum1);
-        setPlayerSum((playerNum1 + playerSum));
+        int playerRoll1 = random.nextInt(6) + 1;
+        System.out.println(Main.getPlayerName() +" got a "+playerRoll1);
+        setPlayerSum((playerRoll1 + playerSum));
 
     }
     public void opponentCalculate(){
         Random random = new Random();
-        int opponentNum1 = random.nextInt(6) + 1;
-        System.out.println("Opponent got a "+opponentNum1);
-        setOpponentSum((opponentNum1 + opponentSum));
+        int opponentRoll1 = random.nextInt(6) + 1;
+        System.out.println(Main.getOpponentName() +" got a "+opponentRoll1);
+        setOpponentSum((opponentRoll1 + opponentSum));
     }
 
 }

@@ -3,12 +3,15 @@ package diceGame;
 import java.util.Scanner;
 
 public class Main {
+    private static String playerName;
+    private static String opponentName;
+
     public static void main(String[] args) {
         System.out.println("Welcome to ProDiceGame.com \nPlayer name:");
         Scanner scan = new Scanner(System.in);
-        String playerName = scan.nextLine();
+        playerName = scan.nextLine();
         System.out.println("Opponent name:");
-        String opponentName = scan.nextLine();
+        opponentName = scan.nextLine();
         Player newPlayer = new Player(playerName, 0, 0);
         Player newOpponent = new Player(opponentName, 0, 0);
 
@@ -29,5 +32,12 @@ public class Main {
         } else {
             System.out.println("Draw");
         }
+    }
+    // Get-Methods
+    public static String getPlayerName(){
+        return playerName;
+    }
+    public static String getOpponentName(){
+        return opponentName;
     }
 }
